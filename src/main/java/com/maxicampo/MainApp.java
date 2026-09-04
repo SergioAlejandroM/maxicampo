@@ -1,5 +1,7 @@
 package com.maxicampo;
 
+import com.maxicampo.dao.ConexionDB;
+import com.maxicampo.dao.InicializadorDB;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -19,7 +21,9 @@ public class MainApp extends Application {
         stage.show();
     }
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
+
+        new InicializadorDB().crearTablas();
         launch(args);
     }
 }
