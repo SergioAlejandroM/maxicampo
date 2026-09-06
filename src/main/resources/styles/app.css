@@ -1,0 +1,173 @@
+* {
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.root {
+    -fx-background-color: #f4f7f6;
+}
+
+/* ---------- Paleta ---------- */
+/* Acento principal: #059669 (emerald-600) */
+/* Acento hover:     #047857 (emerald-700) */
+/* Acento suave:     #d1fae5 (emerald-100) */
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    -fx-background-color: #064e3b;
+    -fx-padding: 24 0 24 0;
+}
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 24 30 24;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d1fae5;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 14 24;
+    -fx-font-weight: bold;
+    -fx-pref-width: 220px;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #065f46;
+    -fx-text-fill: white;
+}
+
+.sidebar-button-active {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Tarjetas / contenedores ---------- */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 24;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 16, 0, 0, 4);
+}
+
+.page-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+/* ---------- Botones ---------- */
+.btn-primary {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+.btn-primary:hover { -fx-background-color: #047857; }
+
+.btn-secondary {
+    -fx-background-color: #e2e8f0;
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+.btn-secondary:hover { -fx-background-color: #cbd5e1; }
+
+.btn-danger {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #dc2626;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+.btn-danger:hover { -fx-background-color: #fecaca; }
+
+/* ---------- Campos de texto ---------- */
+.text-field, .combo-box, .password-field {
+    -fx-background-radius: 10;
+    -fx-pref-height: 38px;
+    -fx-font-size: 13px;
+}
+
+/* ---------- Tabla ---------- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #e2e8f0 transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: #475569;
+}
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #f1f5f9 transparent;
+    -fx-padding: 6 0 6 0;
+}
+.table-view .table-row-cell:odd { -fx-background-color: #fafbfc; }
+.table-view .table-row-cell:selected {
+    -fx-background-color: #d1fae5;
+    -fx-text-fill: #064e3b;
+}
+.table-view .table-row-cell:hover { -fx-background-color: #ecfdf5; }
+
+.toolbar-container {
+    -fx-padding: 0 0 16 0;
+    -fx-spacing: 10;
+}
+
+/* ---------- Login ---------- */
+.login-root {
+    -fx-background-color: linear-gradient(to bottom right, #ecfdf5, #d1fae5);
+}
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-padding: 40 36 36 36;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 28, 0, 0, 10);
+}
+.login-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #064e3b;
+}
+.login-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6b7280;
+}
+.login-error {
+    -fx-text-fill: #dc2626;
+    -fx-font-size: 12px;
+}
+
+login-field {
+    -fx-pref-width: 260px;
+    -fx-pref-height: 38px;
+    -fx-background-radius: 8;
+    -fx-font-size: 13px;
+}
+
+.login-button {
+    -fx-pref-width: 260px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 8;
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
